@@ -1,4 +1,4 @@
---| Intro to this shit |--
+--| Intro to it all |--
 - You have to import packages kinda like Java
  \-> package main
      import "fmt"
