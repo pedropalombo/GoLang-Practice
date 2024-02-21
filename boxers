@@ -1,9 +1,19 @@
 --| Intro to it all |--
-- You have to import packages kinda like Java
- \-> package main
-     import "fmt"
-     func main() {
-        fmt.Println("Wasuuuuuuuuuup")
-     };
+   - You have to import packages kinda like Java
+   \-> package main
+      import "fmt"
+      func main() {
+         fmt.Println("Wasuuuuuuuuuup")
+      };
 
-- You can multi-import libs with "import ( ... )"
+   - You can multi-import libs with "import ( ... )"
+
+   = ( Vars ) =
+   - Types
+      -> Explicit
+         \-> var example int
+      -> Implicit
+         \-> example := 10 //initial values use ':='
+      -> Constants
+         \-> const Example = 'Yoooo'
+         
