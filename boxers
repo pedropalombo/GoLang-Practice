@@ -12,8 +12,34 @@
    - Types
       -> Explicit
          \-> var example int
-      -> Implicit
-         \-> example := 10 //initial values use ':='
-      -> Constants
+      
+         -> Implicit
+         \-> example := 10 //initial generic values use ':='
+      
+         -> Constants
          \-> const Example = 'Yoooo'
+      
+         -> Arrays //works like a touple (fixed length)
+         \-> ages := [3]int{19, 12, 21} //variableName = [length]type{values, inside, the, array}
+      
+         -> Slices //mutable arrays
+         \-> scores := []int{100, 50, 60} //same as arrays, but without length
+            |-> <Appending>
+               (-> scores = append(scores, 96)
+            |-> <Length>
+               (-> len(scores)
+            |-> <Ranges>
+               (-> ranging := scores[0:2] //gets all values from the beginning until before the end
+               (-> rangingStart := scores[:2] //.. from the start
+               (-> rangingEnd := scores[1:] //.. until the end
+   
+   = ( Printing ) =
+   - Println & Printf
+      -> same as in Java
+   
+   - Sprintf
+      -> returns formated text into a var
+         \-> neverForget := fmt.Sprintf("\nShoot for the Moon, baby B)")
+   
+         
          
